@@ -1,0 +1,100 @@
+/* Existing CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%; /* Adjust width as needed */
+    max-width: 1000px; /* Adjust max-width as needed */
+}
+
+h1 {
+    color: #333;
+    font-size: 45px;
+   
+}
+
+.meaning {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.details {
+    margin-top: 30px;
+    color: #666;
+}
+
+.notfound {
+    font-weight: bold;
+    font-family: "Arial", sans-serif; /* Change font family */
+    font-size: 28px; /* Change font size */
+    color: red; /* Change font color */
+}
+
+.tamilmeaning {
+    font-weight: bold;
+    font-size: 27px;
+    color: green;
+    margin-top: 30px; /* Adjusted margin-top */
+}
+
+.englishword {
+    font-weight: bold;
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+}
+
+/* Additional styles for userEnterWord and foundmeans */
+.user-enter-word {
+    font-family: "Arial", sans-serif; /* Change font family */
+    font-size: 26px; /* Change font size */
+    color: black; /* Change font color */
+}
+
+.found-means {
+    font-family: "Arial", sans-serif; /* Change font family */
+    font-size: 23px; /* Change font size */
+    color: black; /* Change font color */
+}
+
+/* Disclaimer styles */
+.disclaimer {
+    font-weight: bold;
+    margin-top: 32px; /* Adjust margin-top */
+    color: brown; /* Brown color */
+    font-size: 19px; /* Adjust font size */
+}
+
+/* Button styles */
+/* Oval-shaped "Back" button styles */
+button {
+    background-color: #007bff; /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    padding: center; /* Padding */
+    font-size: 27px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-top: 35px; /* Adjust margin-top */
+    margin-bottom: -40px;    
+border-radius: 50px; /* Make the button oval-shaped by setting border-radius to half of its height */
+     width: 95px; /* Adjust width as needed */
+    height: 42px;
+}
+
+
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

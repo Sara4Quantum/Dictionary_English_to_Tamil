@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    color: black; /* Dark gray text color */
+    margin-bottom: 30px; /* Adjust margin-bottom as needed */
+    position: relative;
+    z-index: 1; /* Ensure title is above the container */
+    margin-top: -50px; /* Move title further up */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); /* 3D text effect */
+}
+
+.background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure pattern is behind other content */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure container is above the background pattern */
+}
+
+h1 {
+    font-size: 26px;
+    color: black; /* Dark gray text color */
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 15px 10px;
+    font-size: 22px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db; /* Blue border on focus */
+}
+
+input[type="submit"] {
+    width: 50%; /* Reduced button size */
+    padding: 10px; /* Reduced padding */
+    font-size: 23px; /* Increased font size */
+    color: #fff; /* White text color */
+    background-color: green; /* Blue background */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen; /* Green on hover */
+}
+
+.disclaimer {
+    font-weight: bold;
+    font-size: 15px;
+    
+    color:brown; /* Dark gray text color */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-bottom: 12px;
+    transform: translateX(-50%);
+}
