@@ -1,15 +1,12 @@
-# Use official OpenJDK base image
-FROM openjdk:17-jdk-slim
-
-# Set the working directory inside the container
+# Stage 1: Build the application
+FROM maven:3.8.5-openjdk-17-slim AS build
 WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Copy the JAR file into the container
-COPY target/*.jar app.jar
-
-# Expose port (change 8080 if your app runs on a different port)
+# Stage 2: Run the application
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-
-# Command to run the JAR file
 ENTRYPOINT ["java", "-jar", "app.jar"]
-
